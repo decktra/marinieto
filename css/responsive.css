@@ -4629,10 +4629,10 @@
     .sc_services_default .sc_services_item_info {
         padding: 1.2em;
     }
-    .sc_services_default .sc_services_item_content,
+    /* .sc_services_default .sc_services_item_content,
     .sc_services_default .sc_services_item_button {
         display: none;
-    }
+    } */
     .sc_services_default .sc_services_item_subtitle {
         font-size: 12px;
     }
