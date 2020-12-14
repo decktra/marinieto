@@ -13,7 +13,8 @@
 		max-height: 200px;
 	}
 	.sc_services_default .sc_services_item_info {
-		padding: 2.4em 2.5em 3.45em;
+        padding: 2.4em 2.5em 3.45em;
+        min-height: 200px;
 	}
 	.programs {
 		padding-left: 0em!important;
