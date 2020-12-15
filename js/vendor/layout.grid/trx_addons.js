@@ -2011,29 +2011,29 @@ function trx_addons_sc_countdown_update_canvas(item, value) {
     context.strokeStyle = canvas.data('color');
     context.stroke();
 }
-jQuery(document).on('action.init_shortcodes', function(e, container) {
-    "use strict";
-    if (container.find('.sc_form_form:not(.inited)').length > 0) {
-        container.find('.sc_form_form:not(.inited)').addClass('inited').submit(function(e) {
-            "use strict";
-            sc_form_validate(jQuery(this));
-            e.preventDefault();
-            return false;
-        });
-    }
-    jQuery('[class*="sc_input_hover_"] input, [class*="sc_input_hover_"] textarea').each(function() {
-        "use strict";
-        sc_form_mark_filled(jQuery(this));
-    });
-    jQuery('[class*="sc_input_hover_"] input, [class*="sc_input_hover_"] textarea').on('blur change', function() {
-        "use strict";
-        sc_form_mark_filled(jQuery(this));
-    });
-    jQuery('input, textarea, select').on('change', function() {
-        "use strict";
-        jQuery(this).removeClass('trx_addons_field_error');
-    });
-});
+// jQuery(document).on('action.init_shortcodes', function(e, container) {
+//     "use strict";
+//     if (container.find('.sc_form_form:not(.inited)').length > 0) {
+//         container.find('.sc_form_form:not(.inited)').addClass('inited').submit(function(e) {
+//             "use strict";
+//             sc_form_validate(jQuery(this));
+//             e.preventDefault();
+//             return false;
+//         });
+//     }
+//     jQuery('[class*="sc_input_hover_"] input, [class*="sc_input_hover_"] textarea').each(function() {
+//         "use strict";
+//         sc_form_mark_filled(jQuery(this));
+//     });
+//     jQuery('[class*="sc_input_hover_"] input, [class*="sc_input_hover_"] textarea').on('blur change', function() {
+//         "use strict";
+//         sc_form_mark_filled(jQuery(this));
+//     });
+//     jQuery('input, textarea, select').on('change', function() {
+//         "use strict";
+//         jQuery(this).removeClass('trx_addons_field_error');
+//     });
+// });
 
 function sc_form_mark_filled(field) {
     "use strict";
