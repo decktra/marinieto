@@ -2698,4 +2698,8 @@ button:focus {
   height: 100%;
 }
 
+.btn {
+  white-space: normal;
+}
+
 /*# sourceMappingURL=style.css.map */
